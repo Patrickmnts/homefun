@@ -1,0 +1,68 @@
+HW Tuesday 6/4/2013
+
+What is your favorite color?
+	#D65026
+
+How old are you in seconds? (If you did this with only a calculator how would you do it?)
+Birthday April 19th 1988
+24 years 1 months 14 days
+	(365 * 24) + 30 + 14
+		8804 days * 24 hours/day
+			211296 hours * 60 min/hr
+				12677760 min * 60 sec/min
+					760.7 million seconds old
+
+What is a String?
+	A group of letters, punctuation, digits, symbols or spaces in a program, surrounded by quotations.
+
+What’s the difference between single and double-quoted strings?
+	Double quoted strings support a wider variety of escape sequences.  While single quoted strings support \' and \\ escapes, double quotes are able to utilize \", \\, \a, \b, \r, \n, \s, and \t.
+
+How do you use a quote mark inside of a string? (escaping characters)
+	You put an (\) escape variable in front of your mark.
+
+What is a variable?
+	A variable is something that we want to save in order to call upon it at a later point in our program.
+
+How do you put a variable inside a string? (interpolation or concatenation)
+ name = "Patrick"
+ puts name + " is really excited to be a part of PCS!"
+ puts "#{name} is really excited to be a part of PCS!"
+
+What does the to_s or the to_i method do and why do we need them? (type casting)
+	to_s turns an object into a string.
+	to_i turns an object into an integer.
+		They are important because you cannot add integers and strings together so in order to execute certain programs a temporary shift of state might be required for the desired result.
+
+<!-- Even Questions -->
+How do you call a method on a variable?
+	variable.method
+
+How do you generate a random number between 1 and 20?
+	Use the rand(n), where output will be within the range 0 < x < n.
+		rand(21)
+
+How do you define a new method?
+	def method_name
+		Making sure your method name starts with a lower-case letter, just like variables.
+
+How do you define a new method that takes 2 parameters?
+	def method_name method_name2
+
+What is a method?
+	"Methods are like verbs" they tell an object what to do.
+
+What happens if you specify that it needs 2 parameters but you only give it 1? (arity)
+	When a method is defined with 2 parameters, it must have 2 parameters in order to operate.  The computer wont know what to do with the empty space where a parameter was originally defined.
+
+If you use a variable outside a function can it be used inside?
+	No, Ruby will work to protect local variables within a defined method from conflicting with one another throughout the program.
+
+If you assign a new value inside the function, what is the value of the variable
+after the function? (overwriting vs shadowing)
+	#<NameError: undefined local variable 'new_variable'>
+
+If you don’t explicitly return a value from a function, what is returned? (implicit return)
+	If you dont explicitly lay out a return value in a function Ruby will evaluate it to the last value of the statement.
+		pg. 92 "The value returned from a method is simply the last expression evaluated in the method (usually just the last line of the method)."
+
