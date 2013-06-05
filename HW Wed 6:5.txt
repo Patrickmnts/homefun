@@ -1,0 +1,60 @@
+What is recursion?
+	When you call a method within itself.
+
+When learning recursion, what is the defacto “hello world” style program?
+	Taking a factorial of a negative number.
+
+		def factorial num
+			if num < 0
+				return "you can't take a factorial of a negative number."
+		end
+		if num <= 1
+			1
+		else
+		 num * factorial(num-1) *********DING DING
+		end
+		end
+
+Use pseudo code to complete a recursive sort
+	def sort some_array
+
+	Hint: There are three steps to any recursive algorithm
+		Check to see if there’s any work left to do and return if not. (early return)
+		Do some work (reduce the problem)
+		Call yourself (recurse) (sometimes 2 & 3 are the same step)
+
+<!-- Even -->
+How do you redirect the output of a program to a file?
+	|output|.write
+
+How do you open and read the contents of a file?
+	File.read
+
+How do you open and write text to a file?
+	File.open filename, 'w' do |f|
+		f.write
+	end
+
+How do you put a variable inside a string? (Interpolation)
+	#{variable_name}
+
+What does YAML stand for?
+	Either
+		"Yet Another Markup Language"
+		or RECURSIVELY "YAML Ain't Markup Language".
+
+How do you convert an object to YAML and then convert it back to an object? (
+Marshal/Serialize)
+	Part 1:
+		@top of program
+			require 'yaml'
+	Part 2:
+		variable_string = variable.to_yaml
+	Part 3:
+		variable_read_array = YAML::load
+
+How do you do a recursive search for files when using Dir (Globbing)
+	Dir['**/*.{file_name or suffix or anything your looking for}']
+
+
+
