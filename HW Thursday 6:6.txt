@@ -1,0 +1,38 @@
+	<! Chap. 15 >
+What is a REPL? Is irb a REPL, why or why not?
+	Read
+	Evaluate
+	Print
+	Loop
+
+	irb is the REPL for the Ruby language.  A shell interpreter that runs on the control line that reads the code, evaluates the code, prints the response, and then loops back for another input.
+
+Why is the PickAxe book called PickAxe?
+	Well... BECAUSE... there is a picture of a pickaxe of the cover of course!
+
+		<! Even Chap. 13 >
+How do we add methods to existing classes or modules (Reopening)
+	We initialize an Instance variable.  (@variable)
+
+Why would we want to reopen a class or a module?
+	We want to reopen the class if we want to save the results to an array or would like to be able to utilize the result later.  For instance if we generate a random number (rand(20)), it would be nice to save and analize the output at a later point.
+
+What is the first method called when you instanciate an object? (Constructor)
+	When you create a new object we use .new and then initialize is called automatically, as long as its defined in our class.
+
+Could you call initialize or redefine new? Why would you or wouldn’t you do that?
+	'new' must come first, if there is no 'new' method you would have nothing to initialize.  If you didnt plan on calling an initialize class then you would want to redefine new.
+
+What does the private keyword do?
+	Private begins a section of methods that are defined within the method as a whole, generally what would make the method as a whole function with the characteristics we want.  The "under the hood" section of the program.  These private methods that are not accessible or modifiable outside the private section.
+
+		<! ODD Chap. 14 >
+What is the difference between a Proc and a method?
+
+Could you have defined maybe_do in some way other than using a Proc?
+
+How do you create a method that accepts a block as an argument?
+
+When you’ve passed a block into a method, how do you call it in the method? (Yield)
+
+Try profiling some of your code using the profile method in the book. Show me the output of the profile in a comment above the code. (Computers are fast, you may need to use sleep or a large number of iterations to make a meaninful number. Start with 10000.times do)
