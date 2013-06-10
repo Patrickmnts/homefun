@@ -66,3 +66,51 @@ If you don’t explicitly return a value from a function, what is returned? (imp
 	If you dont explicitly lay out a return value in a function Ruby will evaluate it to the last value of the statement.
 		pg. 92 "The value returned from a method is simply the last expression evaluated in the method (usually just the last line of the method)."
 
+	<!-- ODD -->
+Why is 2 < 10 #=> true but '2' < '10' #=> false? (lexicographical ordering)
+	The single quotes turn both '2' && '10' into strings, are then compared lexicographically, or by the order they appear in the dictionary.  Because 2 comes before 10 when counting lexographically it is greater.
+
+What are the only two values that evaluate to false in Ruby? (falsy values)
+	Nil, && False.
+
+What happens if you use = instead of == in a conditional?
+	Your assigning a variable with the single = instead of saying this condition is true when X equals Y. (true if x == y)
+
+What keyword do you use to stop a loop?
+	*break
+
+If you end up executing an infinite loop how do you stop it? (SIGKILL)
+	Ctrl + c
+
+Why would you ever want to use while true?
+	If you wanted you program to loop forever, or until it recieved a certain input that would trigger the break.
+
+What do the && and || operators do? (logical operators)
+ && = "and" All aspects need to be true for the method to return true.
+ || = "or" if one, the other or both are true the whole line will return a true.
+
+What is the difference between if !false and unless false? (logical not)
+	Nothing. They are saying the same thing. Humans understand the word "unless" in a slightly different manner but to the computer they are the equivalent.
+
+What is an array?
+	An array is a list.
+
+What does it mean for an array to be zero indexed?
+	The placeholder assignments in an array begin counting at 0.  if you have 4 objects in an array they are counted [0, 1, 2, 3].
+
+What is the method in 8.1 we use to walk over all values in an array?
+	.each is the method we use to make a change to EVERY value in an array.  
+
+What do push, pop, and last do? Is there a first?
+	.push - adds the item to the last spot on the array.
+	.pop - removes the last item in the array and tells you what it is.
+	.last - tells you the last item in the array but does nothing to it. Think of it as a listing of what .pop would remove.
+	There is a .first that tells you the first item in the array.
+
+
+
+
+
+
+
+
