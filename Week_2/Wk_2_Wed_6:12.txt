@@ -1,14 +1,33 @@
 <!-- Eloquent Chap. 4 --!>
 How do you add a newline to a String?
-
+  You would put '/n' at the end of the string where it will then print all of the following information on the next line.
 
 What is the difference between single and double quotes?
-
+  The difference is in how the symbol reads and interprets varous symbols such as / \ and allows for commands like /n to move it to new line.
 
 How would you replace all instances of the word ‘pie’ with the word ‘pizza’ in a String?
-
+  string.gsub['pie', 'pizza']
 
 What is the difference between gsub and gsub!?
-
+  gsub selects from an array and subs out set keys, returning a new string with the result.
+  gsub! performs a substitution on a string in place and returns the modified string.
 
 Do a little research on apidock.com and find 5 methods on String that you think are interesting and could be useful.
+  1) .rstrip() - returns a copy of the string with all trailing white space removed.
+
+  2) .succ - returns successor to string.
+  [1234].succ => [1235]
+
+  3) .squeeze - returns copy of string with all runs of letters smashed into single.
+  ['Whoop Moon'].squeeze => 'Whop Mon'
+
+  4).replace - replaces a variable with a new one.
+    a = 'chicken'
+    a.replace 'turkey'
+    a => 'turkey'
+
+  5).concat - concatenates a given object to a string.
+    a = 'hello'
+    a << 'world' => 'hello world'
+    a.concat(33) => 'hello world!'  (33 is the integer value for the ! object.)
+
