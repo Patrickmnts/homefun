@@ -1,26 +1,48 @@
 <!-- Eloquent Chap. 2 & 3 --!>
+
 What alternative keyword can we use if we’re negating the boolean expression inside our if?
+  unless
 
 What is the ‘negative doppleganger’ for while?
+  => until
 
 What is a “modifier form” of an expression? (Which I call a post-conditional)
+  The 'modifier form' is when an expression is condensed to its lowest (usually one line) form.  This is helpful for consise reading and code clairity.
 
 What does a case statement return by default?
+  A case statement returns the values of the selected 'when' or 'else' clause, or 'nil' if no 'when' clause matches and there is no 'else'.  A case structure is just "a giant value returning expression". (pg. 22)
 
 What two values evaluate to false inside an if?
+  "only false and nil are treated as false." (pg. 23)
 
 What is a ternary expression used for (?:)?
+  ?: acts like a very compact if statement with the condition coming right after the '?'
+
+  example: file = all ? 'specs' : 'latest_specs'
+  if the condition is true and all = true then it evaluates to 'specs', if all = false then it evaluates to the end 'latest_specs' variable. (pg. 26)
 
 What is a “guarded or” used for (||=)?
+  ||= is used to ensure that an instance variable is not nil.  The 'guarded or' just makes sure that even if nothing is assigned specifically to a variable by the user it will set to a default. (pg. 26)
 
 What’s the fastest way to make an array of words?
+  new_array = %w{ words that you want in your array }
+   (pg. 30)
 
-When using symbols as Hash keys, what are the two ways to initialize a Hash using the curly brace notation? (1.9 hash syntax)
+When using symbols as Hash keys, what are the two ways to initialize a Hash using the curly brace notation? (1.9 hash syntax) (pg. 30)
+  new_hash = { :first_name => 'Patrick', :last_name => 'Mounts' }
+
+  new_hash = { first_name: 'Patrick', last_name: 'Mounts' }
 
 What is the name of the * operator?
+  Splat  the splat is assigned to a single parameter of the hash and means that that parameter will soak up any extra arguments that are passed into the method. (pg. 31)
+
 
 Should you use a for loop to iterate over an Array or Hash? If not, what’s the alternative?
+  You should not use a for loop to iterate over either.  You use the each method instead.  (pg. 34)
 
 What is the difference between each and map?
+  each will do something to an array and return a changed copy of the original array.
+  map will iterate through an array and return an entirely new array as the result.  each does something WITH an array, map does something TO an array. (pg. 35)
 
 What is a bang method?
+ '!' bang indicates that the method is dangerous or surprising.  Generally that it will change something or perform unexpectedly.  It is good practice to investigate why the bang method is used before changing any aspect of that code. (pg. 37)
