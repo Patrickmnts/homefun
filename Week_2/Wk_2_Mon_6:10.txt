@@ -30,6 +30,6 @@ Why do we make sure that our tests are red before fixing them?
 
 If your company won’t allow full tests, what does it mean to “exercise your code, even just a little bit.”
 
-	write whatever unit tests you can.  You can learn a lot from a small simple test that runs no asserts but still shows you that everything is valid and that the code is valid. (pg 112-113)
+	write whatever unit tests you can.  You can learn alot from a small simple test that runs no asserts but still shows you that everything is valid and that the code is valid. (pg 112-113)
 
 
