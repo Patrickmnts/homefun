@@ -1,0 +1,34 @@
+<!-- Eloquent Chap. 5 --!>
+What does the dot character match?
+  The dot character matches any single character string, either numerically or alphabetically.  . will match any single character string the same way .. will match any two character string. (pg. 54)
+
+How do you match exactly 3 lower case characters
+  [a-z]3  (pg. 55)
+
+How do you match a range of characters?
+  If you were wanting to match a single character within a range of characters you would set your range within [], if you were wanting to match an entire range that is when you would utilize a regular expression that explicitly lays out the range you are looking for within /[_]/.  You may set the range of either numbers or letters. (pg 57)
+
+How do you match any whitespace?
+  /s will match white space, tabs, or 'vanilla' spaces, whatever those may be. (pg. 56)
+
+How do you match any number?
+  \d or [0-9], either will do the same thing of targeting single instances of any digit that appears within your string. (pg.56)
+
+How do you match either “ferret” or “weasel”?
+  ferret | weasel  will target either with the 'or' symbol. (pg. 56)
+
+What’s the difference between * and +
+  the * will target zero or more instances of the variable directly preceeding it, while + will match the symbol '+' explicitly.
+  (pg. 58)
+
+What does the operator =~ do in Ruby?
+  =~ tests  whether a regular expression matches a string.  It will return the index number where the string matched what we were looking for in the regex.
+
+How do you match the beginning/end of a line?
+  ^ can be used to check for the occurance of a string within a larger block of text, specifically when it occurs at the beginning!
+
+  $ will do the same thing for occurances at the end.  (pg. 61)
+
+Regular expressions marked the beginning of my serious programmer career. Seriously spend some time on this. In fact, write down the time and remember where you were when you learned regexen.
+
+  Tuesday June 12th, 2013!!!!!!! Let this day go down in history!
