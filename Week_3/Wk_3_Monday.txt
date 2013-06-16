@@ -60,6 +60,7 @@ How do we select only checkboxes that are currently checked?
 
 (research) What is the keyboard command to open the Chrome element inspector? To open the Chrome console?
     Command + Option + I
+    Command + Option + J
 
 
 
