@@ -1,0 +1,56 @@
+<--JQuery chap. 1 & 2 -->
+In your own words, summarize the 7 things on page 9-11 that jQuery does well.
+
+  1. Modify the appearance of a webpage, jQuery is more a more widely accepted library across browsers than many of the new CSS.  Plus the ability to change style and look post render.
+
+  2. Respond to user interaction.  Providing a cleaner clutter free, more widely accepted user response library.
+
+  3. Animation, jQuery can provide animated visual feedback to user controlled document manipulations. Fades, Swipes all that good stuff!
+
+  4. Retrieve info from the server without the need to refresh the entire page.  Known as Ajax.
+
+  5. Simplify iteration and array manipulation for standard, common JavaScript tasks.
+
+  6. Alter document content.  Insert images, change text, jQuery has the power to rewrite the HTML file.
+
+  7. Access elements across the document. Easily crossing the "Document Object Model (DOM)".  It's easy to select exact sections of the site that you want to manipulate or inspect.
+
+
+How do you include external javascript files in HTML
+  <script src=""> Put the URL in the quotes that your are trying to include! </script>
+  <script src=""> Or you host a set locally for the dev. process </script>
+
+Should jquery.js get included before or after our project files?
+  It is important that your jquery.js files come before your project files otherwise there will be no framework for our project files to reference.
+
+What does this code do and why do we use it? $(document).ready()
+  This code allows us to pre-schedule function calls without having to wait for the entire page to fully render.  Because our jQuery files will be held in the <head> it tells to computer to wait until the full html structure (DOM) is ready before performing the stylings.  Not necessarily having to wait for all img's and other high bandwidth aspects to load.
+
+What code would you use to select these things:
+an element
+  $('element_desired')
+
+an id
+  $('#id_desired')
+
+a class
+  $('.class_desired')
+
+a p tag, inside a div with class “turkey”, inside a body with the id “thanksgiving”.
+  $(document).ready(function() {
+    $('body#thanksgiving > div.turkey > p')
+  }
+
+
+
+How would you add “tiger stripes” to a table with jQuery? (tiger stripes are alternating background colors)
+
+How do we select only checkboxes that are currently checked?
+
+(research) What is the keyboard command to open the Chrome element inspector? To open the Chrome console?
+
+Command + Option + I
+
+
+
+
