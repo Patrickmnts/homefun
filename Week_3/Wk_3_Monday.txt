@@ -38,18 +38,28 @@ a class
 
 a p tag, inside a div with class “turkey”, inside a body with the id “thanksgiving”.
   $(document).ready(function() {
-    $('body#thanksgiving > div.turkey > p')
+    $(body#thanksgiving div.turkey p);
   }
 
-
-
 How would you add “tiger stripes” to a table with jQuery? (tiger stripes are alternating background colors)
+  We would use CSS's :odd or :even selectors with jQuery.
+
+  <stylesheet>
+  define what you want the decoration to be in both the tr{} & the .alt{} classes.  Providing different styling attributes to be applied to each line.
+  </stylesheet>
+  <jQuery>
+    $(document).ready(function(){
+     $('tr:even').addClass('.alt');
+    });
+  </jQuery>
 
 How do we select only checkboxes that are currently checked?
+  $(document).ready(function(){
+    $('input[type="checkbox":checked');
+  })
 
 (research) What is the keyboard command to open the Chrome element inspector? To open the Chrome console?
-
-Command + Option + I
+    Command + Option + I
 
 
 
