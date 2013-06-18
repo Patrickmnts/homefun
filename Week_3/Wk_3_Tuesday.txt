@@ -1,0 +1,49 @@
+<!-- jQuery Chapters. 3 & 4--!>
+What is the most common short version of $(document).ready()?
+  window.onload - the main difference being that with 'window.onload' we must wait until every element on the page has been downloaded to the browser.  Which can be a pain if you are writing 'featureful' code. (pg. 47)
+
+  while not as recommended another equivalent of $(document).ready(function()) is $(function() {_our code_}); (pg.50)
+
+What is “progressive enhancement”?
+  Progressive enhancement is the thought that all of the basic functionality of a page should be available to everybody, no matter what browser they use.  You should use layerd technology in order to allow everybody access to the sites basic functions. But that doesnt mean that you shouldnt offer more advanced features to those smart enough to be using more advanced browsers. (pg.51)
+
+How do you bind a click event to a button?
+  $(document).ready(function(){
+    $('buttonClassName').bind('click', function(){
+      $()
+    });
+  }); (pg.53)
+
+Inside a click handler, what is the variable [this] set to?
+ 'this' refers to whichever element happens to be clicked on at that point in time. Inside any event handler this refers to the DOM element which the behavior was attached.
+
+What is event bubbling?
+  We send the event to the most specific element, after this element reacts to our change the effect bubbles up the DOM tree to more general elements. (pg. 66)
+
+How do we stop an event from bubbling up the chain?
+  We must constrain the scope of our events. We do this with access to our 'event object' Between the use of declaring explicit event variables and the .stopPropagation() method we can adequately stop/halt event bubbling.  READ MORE @ (pg. 67-69)
+
+How do we stop an element from taking its default action (e.g. a submit button will refresh the page or submit a form)
+  .preventDefault() (pg. 70)
+
+How do we remove a binding?
+  We can always use the .unbind() method. (pg. 74)
+
+How do we hide and show elements?
+  $(document).ready(function(){
+    $('___').hide()
+  })
+
+   $(document).ready(function(){
+    $('___').show()
+  })
+
+How do we blur or slide elements?
+  $('___').slideDown('_speed_')
+
+  $('___').blur()
+
+
+
+
+
