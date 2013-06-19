@@ -1,0 +1,42 @@
+<!-- jQuery chap. 5 --!>
+How do you alter an 'a' tag’s [href] attribute? (pg. 113)
+=>  $(document).ready(function(){
+      $('a href=').attr();
+    });
+
+
+How do you create new content and add it to the page?(pg.119 - 121)
+=>    $(document).ready(function(){
+        $('___whatever___').insertAfter/insertBefore('__wherever__');
+      });
+
+      The insertAfter method and its counterpart will insert the desired content outside of the div, or element that you target within the function, thus pushing content to new line.  If you want to attach it directly to a particular object use the .prependTo()/.appendTo() methods.
+
+How do you move content within the page? (pg. 122 - 123)
+=>  This is another situation where the .insertAfter/.insertBefore methods could come in handy.  The same way we added the context to the page in the first place we can shift elements within the DOM.
+
+  $(document).ready(function(){
+      $('_desired content_').insertBefore/After('#idTag for DOM reference')
+    });
+
+What jQuery function do we use to iterate over all elements in a jQuery set? (pg. 124 - 125)
+=>  $('___').each(function(){});
+
+How do you copy a DOM element? How do you copy any event listeners as well? (pg. 130)
+=>  To Copy DOM element w/out events.
+  $('___').clone().insertBefore/After('_location_')
+    To Copy DOM element w/ event.
+  $('___').clone(true).insertBefore/After('_location_')
+
+What’s the difference between [.text()] and [.html()]?
+=> .html() will return the entire html elemente including the markup tags.
+
+  .text() will only return the text of the object, ignoring all of the html
+
+How do we remove all the content inside an element? (pg. 137)
+=> .empty() will leave the element in place just remove all of the content.
+  .remove() will completely remove the entire element from the DOM.
+
+When you insert new content into the page, does it have bindings attached to it? If not, how do we make sure that existing bindings that should have targeted the new element, do?
+=> When we insert new content onto the page the bindings are not automatically attached.  One of the best ways to allow for page growth without having to do them individually would be to attach the bindings to a parent object, such as the container that can pass back the binding on the return trip of the event bubbling.
+
