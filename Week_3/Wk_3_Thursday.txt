@@ -1,0 +1,66 @@
+<!-- jQuery chap 6 --!>
+
+In your own words, what is AJAX and why is it worth knowing about?(pg. 140)
+
+=> Ajax is a way to load data from a server to the browser w/out having to visibly refresh the page.
+
+* Asynchronous JavaScript and XML (Ajax): "at its most basic Ajax includes the following;"
+
+  1. JS, to capture interactions w/ the user or other browser events.
+
+  2. the XMLHttpRequest object, this allows requests to be made to the server w/out having to refresh and interrupt current browser tasks.
+
+  3. A file on the server that presents the data in either XML, HTML or JSON.
+
+  4. & More JS, to interpret that (#3) data and present it to the page.
+
+
+How do you download an html fragment and assign it to a variable? (pg. 143)
+=>.load()
+
+What is JSON and why do we love it? (pg. 144)
+=> JavaScript Object Notation we love it because it is far less bulky than XML formatting and it allows us to easily parse and select the desired information from it.
+  We also have an easy method to parse the JSON string that is returned from the server with .getJSON(), which will also provide a calling code for each resulting object.
+
+What function do we use to download a JSON snippet from a server? (pg. 147)
+=> $(document).ready()
+     function(){$.getJSON('JSON-URL',____)}
+
+
+How can we provide a function to $.getJSON which allows us to act on the data after it finishes downloading? (pg. 146)
+=> We would attach a callback function to the .getJSON method.
+     function(){$.getJSON('json-url',function()}
+    *the function within the .getJSON method would be our call back function that acts on our data after it has finished loading.
+
+What is the .val() function useful for? How does it compare to .html()?
+=> .val() = gets the current value of the first element in the matched elements or to set the value of every matched element.
+
+  .html() = Gets the HTML contents of the first element in the set of matched elements of sets the HTML contents of every matched element
+
+How do we specify an error callback for $.get? (pg.168)
+=> instead of a success() callback method we can use an error() method.
+
+  If for instance we chained our .get function to a click action and when we clicked the 'get' failed or errored out we could set a response to signal us somehow.  either through a console.log or by addending a snippet directly to the HTML.
+
+
+What is JSONP and how do we use it to get around cross-origin policies? (pg. 172)
+=> JSON w/ Padding.  JSONP is a standard JSON file that is wrapped in () and prepended with an arbitrary text string.  The string is determined by the client requesting the data.  B/c of the () the client can cause a functiong to be called... I am not entirely sure as to the meaning of this.
+
+
+What are the drawbacks of JSONP? (pg. 173)
+=> It allows for you to access and parse information from sites that may not necessarily be from a trusted source.  It allows you to bypass the reason they made it difficult to do cross-site scripts in the first place...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
