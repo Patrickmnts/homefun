@@ -1,0 +1,31 @@
+When you think about testing javascript, what use cases come to mind? Are they different from ruby?
+=>  I dont think of them as all that different from ruby.  I think it is good practice to be writing TDD code for all projects where you are dealing with anything above gradeschool complexity.  Even then perhaps it would be a good idea.  Jasmine is nice because the syntax mirrors Rspec and Minitest spec fairly closely trying to write tests in a fashion that are easy to ready and understand.
+
+
+Is jasmine a unit test framework or an integration test framework?
+=> It is my beliefe that jasmine is usually set up as a unit testing framework where you set up a spec file and then have you runner html that handles both the spec and .js file that is being tested.
+
+
+How do you set up a basic jasmine runner? What boilerplate is needed?
+=>  You first must download the jasmine-standalone file pack,
+
+you include your source files ('src') and your spec files ('spec') in the heading of your html document that you are going to test.  The only real 'boilerplate' that is needed are the links to both the .js file that is being tested and the spec file that holds the testing suite.
+
+If it roughly corresponds with an individual test, what does describe correspond with?
+=> describe could be said to correspond with a unit test set or perhaps a "Class" test set.  You can nest multiple 'if' tests within a single 'describe' heading so that you dont need to go making multiple calls to the same for similar test sets.
+
+How do you test equality?
+FULL LIST OF JASMINE MATCHERS @ https://github.com/pivotal/jasmine/wiki/Matchers
+=>  expect(x).toEqual(y)
+
+
+What is the equivalent to setup/teardown?
+=>
+    setup = beforeEach(function()){
+      function that you want performed before each test.
+    });
+
+    teardown = afterEach(function() {
+      function you want performed after each test.
+    });
+
