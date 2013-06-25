@@ -1,0 +1,18 @@
+SOURCES:
+http://evanhahn.com/how-do-i-jasmine/
+http://a-developer-life.blogspot.com/2011/06/jasmine-part-2-spies-and-mocks.html
+
+
+What is a test spy? Is it closer to a mock or a stub? Or neither?
+=>  In Jasmine a spy lets you set up predetermined methods that execute in hypothetical cases of your test.  I believe it would have a closer relation to a mock than a stub b/c we are actually setting up full fake instances instead of just giving it canned answers.
+
+How do you use a spy to facilitate the concept of mocking?
+=>
+
+Why would we watch objects to find out if certain functions have been called?
+=> if we have conditions in our test that may take a while or we require them to be run asyncronously we use .waitsFor() on the section we need to proceed, followed by the .run() to ensure that we have all the conditions met in order to move forward with our successful tests.
+
+What are the use cases for mocks in Javascript? Are they different from Ruby?
+=>
+
+
