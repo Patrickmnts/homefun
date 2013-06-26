@@ -13,6 +13,6 @@ Why would we watch objects to find out if certain functions have been called?
 => if we have conditions in our test that may take a while or we require them to be run asyncronously we use .waitsFor() on the section we need to proceed, followed by the .run() to ensure that we have all the conditions met in order to move forward with our successful tests.
 
 What are the use cases for mocks in Javascript? Are they different from Ruby?
-=>
+=> Mocks in JS are needed for testing cases involving Ajax or other server side dealings.  Situations that we wont necessarily be able to have running during tests.
 
 

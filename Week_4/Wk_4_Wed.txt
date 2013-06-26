@@ -1,0 +1,16 @@
+Sources:
+  https://github.com/velesin/jasmine-jquery
+  *** https://github.com/searls/jasmine-fixture
+
+What is a fixture
+=> A fixture with the affix() function allows you to attach html elements directly to the DOM.  Like $().css finds elements within the DOM.  The fixture is useful when it comes to tests, because after setting up the state of the DOM with affix() our test subjects have everything they need to pass, but easily removing it once the test has passed and we no longer need it.
+
+What is the purpose of providing a fixture as opposed to including jasmine in our website’s main layout if we want to test jQuery?
+=> CLEANLINESS!  Adding jasmine to our websites main layout is cumbersome and intimidating for anybody who comes along afterwards.  As they put it the risk with putting external files into our site is that they will become dumping grounds for everything we want to interact with our site but we want to hold externally.
+
+What problem is jasmine-fixture trying to fix over jasmine-jquery?
+=> The goal with jasmine fixture is to scale down the amount of code needed.  By both adding and removing the DOM elements in the same move, we avoid having to run an
+
+afterEach(function(){$('#class')});
+
+

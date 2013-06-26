@@ -61,8 +61,6 @@ describe("Person", function() {
   });
 });
 
-fakePerson.sayHello = jasmine.createSpy('"Say hello" spy').andReturn("ello ello");
-
 
 
 
