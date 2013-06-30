@@ -1,0 +1,12 @@
+
+<!-- This message will display through the erb :form call in basics.rb -->
+<!-- it is displayed through localhost:#port/form -->
+hello from the view.
+
+
+<!-- Notice the form action & method coorelate to this URL & to the Post action taken on .rb to display message -->
+<!-- name of the input = params for post function on .rb -->
+<form action='/form' method='post'>
+  <input type="text" name="message">
+  <input type="submit">
+</form>

@@ -1,11 +1,53 @@
 <-- Rails Track Chunk 1 -->
 SECTION 1
+
+'/sinatra_basics.rb && form.erb' will have code examples from this sinatra work through.
+
 1. Be able to create sinatra projects from scratch in under 3 minutes
 => Steps to creating a sinatra project:
 
-1. Be able to use ERb and template interpolation in Sinatra
-=> ERb
-=> Template interpolation
+    First you must 'gem install sinatra'
+  Then in your .rb file don't forget to:
+
+    require 'sinatra'
+
+  Sinatra will perform on the default stage of 4567, but you will have to remember to restart your server for each change.  'Shotgun' can help prevent this hastle.
+***
+
+    Sinatra uses the format:
+
+    get '/URL' do
+      'SOMETHING HERE'
+    end
+
+      where '/' will be your root URL and the something will be whatever you would like to display on the page.  For example the following would display on the page when I launch localhost:4567/about
+
+    get '/about' do
+      "My name is Patrick and I am 25 yrs old."
+    end
+
+    or you can interpolate from the URL like.
+
+    get '/about/:name/:age' do
+      "My name is #{params[:name]} and I am #{params[:age]} yrs old."
+    end
+
+
+1. Be able to use Embedded Ruby(ERb) and template interpolation in Sinatra
+=> ERb & Template interp.
+    ERb files must be stored in the 'views/' directory within the project folder.  They are called utilizing a similar get function that we saw above.  For example.
+
+        get '/form' do
+          erb :form
+        end
+
+    Will call the embedded ruby file form.erb from the views folder when URL/form is called.
+
+    In order to retrieve the info from the input form we must remember to POST back to the same page as the get form.
+
+        post '/form' do
+          'message with the #{params[:input_name]} from the form.erb file.'
+        end
 
 Suggested Readings:
   (Sinatra tutorial)[http://net.tutsplus.com/tutorials/ruby/singing-with-sinatra/]
