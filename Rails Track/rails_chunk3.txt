@@ -1,0 +1,42 @@
+<-- CHUNK 3 -->
+
+SECTION 9
+9. Be able to use authentication
+=> Steps to using authentication.
+9. Be able to use helper functions in views in under 3 minutes.
+=> Steps to using helper functions in views.
+
+
+Suggested Readings:
+  Hartl Chap 8
+  (Treehouse Rails Advanced)[http://teamtreehouse.com/library/programming/advanced-social-features-in-ruby-on-rails]
+
+SECTION 10
+10. Understand authorization vs authentication
+=> authorization:
+=> authentication:
+10. Be able to CRUD a model through the controller without a scaffold in under 3 minutes
+=> Steps to CRUD(ing) a model through a controller w/out a scaffold.
+
+Suggested Readings:
+  Hartl Chap 9
+
+SECTION 11
+11. Memorize the steps to create a relationship between two models in under 3 minutes
+=> Steps to creating a relationship btwn models.
+
+11. Understand what a join is in SQL
+=> What is a JOIN in SQL?
+
+Suggested Readings:
+  Hartl Chap 10
+
+SECTION 12
+12. Be able to respond to js requests from controllers in under 3 minutes
+=> Steps to responding to controller js requests.
+
+12. Memorize the common functions from the ActiveRecord Query Interface
+=> LIST of Act.Rec. Query Interface functions>
+
+Suggested Readings:
+  Hartl Chap 11

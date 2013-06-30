@@ -1,0 +1,47 @@
+<-- Rails Track Chunk 1 -->
+SECTION 1
+1. Be able to create sinatra projects from scratch in under 3 minutes
+=> Steps to creating a sinatra project:
+
+1. Be able to use ERb and template interpolation in Sinatra
+=> ERb
+=> Template interpolation
+
+Suggested Readings:
+  (Sinatra tutorial)[http://net.tutsplus.com/tutorials/ruby/singing-with-sinatra/]
+
+SECTION 2
+2. Be able to create Rails projects in under 3 minutes
+=> Steps to creating a Rails project.
+
+2. Be able to deploy to heroku
+=> Steps to deploying to heroku.
+
+
+Suggested Readings:
+  Hartl Chap 1
+  (Treehouse Rails)[http://teamtreehouse.com/library/programming/build-a-simple-ruby-on-rails-application]
+
+SECTION 3.
+3. Be able to use scaffold generators
+=> How to use a Rails scaffold gererator.
+
+3. Be able to create migrations to change the database in under 3 minutes
+=> Steps to create a migration that will change the database.
+
+
+Suggested Readings:
+  Hartl Chap 2
+
+SECTION 4
+4. Be able to create static controllers in Rails in under 3 minutes
+=> Steps to creating a static contoller in Rails.
+
+4. Be able to write tests in rspec
+=> Tips on writing tests in Rspec.
+
+
+Suggested Readings:
+  Hartl Chap 3
+
+

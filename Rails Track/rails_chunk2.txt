@@ -1,0 +1,41 @@
+<-- Rails Chunk 2 -->
+SECTION 5
+#5. Memorize the Ruby idioms that we use in Rails
+=> LIST OF RUBY IDIOMS.
+
+Suggested Readings:
+  Hartl Chap 4
+
+SECTION 6
+6. Be able to use bootstrap with Rails in under 3 minutes
+=> Steps to creating a bootstrap template in Rails.
+
+6. Be able to write CSS in SCSS
+=> What it takes to write CSS in SCSS.  What is SCSS?
+
+
+Suggested Readings:
+  Hartl Chap 5
+  (Treehouse Rails Social)[http://teamtreehouse.com/library/programming/building-social-features-in-ruby-on-rails]
+
+SECTION 7
+7. Be able to create and edit migrations
+=> How to create a migration.
+=> How to edit a migration.
+
+7. Be able to CRUD a model and see its attributes in the database
+=> How do you Create Run Use Destroy (CRUD) a model and see attr. in the DB?
+
+Suggested Readings:
+  Hartl Chap 6
+
+
+SECTION 8
+8. Be able to create forms using Rails.
+=> Steps for creating forms w/ Rails.
+
+8. Be able to show validation messages in forms in under 3 minutes
+=> Steps to create & show validation messages in forms.
+
+Suggested Readings:
+  Hartl Chap 7
